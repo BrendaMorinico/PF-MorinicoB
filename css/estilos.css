@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Titillium+Web:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HOME */
+body{
+    height: 100vh;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(26, 83, 92);
+    color: white;
+}
+
+.homebody{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr, 2fr, 1fr;
+    grid-template-areas:
+    "header header"
+    "mainhome mainhome"
+    "footer footer";
+}
+
+/* HEADER */
+
+.header{
+    margin: 0;
+    width: 100%;
+    background-color: rgb( 78, 205, 196);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navheader{
+    flex-grow: 2;
+    height: 100%;
+}
+
+.listanav{
+    height: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    flex-grow: 1;
+    width: 200px;
+    height: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.sticky{
+    position: sticky;
+}
+
+/* MAIN HOME*/
+
+.mainhome{
+    height: 100%;
+    width: 100%;
+    grid-area: mainhome;
+}
+
+.horagrilla{
+    grid-area: grilla;
+}
+
+#grilla{
+    height: 500px;
+    width: 700;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#horario{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+/* FOOTER */
+.footer{
+    background-color:  rgb( 78, 205, 196);
+    color: white;
+    width: 100%;
+    height: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "seguinos mapa . logo";
+}
+
+.red{
+    grid-area: seguinos;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.mapa{
+    grid-area: mapa;
+    margin-top: 25px;
+}
+
+.titulomapa{
+    font-size: 1.5rem;
+}
+
+.titulored{
+    font-size: 1.5rem;
+}
+
+.logo{
+    grid-area: logo;
+    width: 100%;
+}
+.log{
+    height: 100px;
+    width: 100px;
+}
+
+.home{
+    background-color:  rgb(83, 144, 217);
+    color: white;
+}
+
+/* SOBRE NOSOTROS */
+
+.nos{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 2fr, 2fr;
+    grid-template-areas:
+    "titulos titulos"
+    "img nosotros1"
+    "nosotros2 video";
+}
+
+.titulo{
+    grid-area: titulos;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+.imgnos{
+   grid-area: img;
+   height: 500px;
+   width: 700px;
+   border-radius: 5px;
+   align-self: center;
+   justify-self: center;
+}
+
+.videonos{
+    grid-area: video;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+.nosotros1{
+    grid-area: nosotros1;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.nosotros2{
+    grid-area: nosotros2;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+.titulo{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+/* PRECIOS */
+
+.mainprecio{
+    height: 700px;
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "titulo . ."
+    "packs packs packs"
+    ". reserva .";
+}
+
+.packs{
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    grid-area: packs;
+}
+
+.precios{
+    background-color: rgb(86, 207, 225);
+}
+
+.reserva{
+    grid-area: reserva;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.reserva a:hover{
+    color: aquamarine;
+}
+
+#titulopack{
+    grid-area: titulo;
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+}
+
+/* PRODUCTOS */
+.mainproductos{
+    height: 700px;
+}
+
+.productos{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ropa{
+    height: 200px;
+    width: 200px;
+}
+
+.tituloprod{
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+/* CONTACTO */
+.maincontacto{
+    height: 700px;
+}
+#opciones{
+    width: 500px;
+    background-color: rgb(255, 255, 255, 40%);
+    margin-bottom: 15px;
+}
+
+.formu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre{
+    width: 500px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255, 40%);
+    border-style: inherit;
+    border-radius: 5px;
+}
+
+.mail{
+    width: 500px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255, 40%);
+    border-style: inherit;
+    border-radius: 5px;
+}
+
+.textoformu{
+    width: 500px;
+    height: 200px;
+    margin-bottom: 25px;
+    background-color: rgb(255, 255, 255, 40%);
+    border-style: inherit;
+    border-radius: 5px;
+}
+
+main form legend{
+    color: white;
+    margin-left: 50px;
+    font-size: 1.5rem;
+}
+
+main form{
+    height: 100%;
+}
+
+.btnenviar{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .header{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       background-color: black;
+    }
+    .footer{
+        background-color: black;
+    }
+
+    .nos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .imgnos{
+        height: 300px;
+        width: 400px;
+    }
+}
+@media (max-width: 600px) and (min-width: 320px) {
+      .packs{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}

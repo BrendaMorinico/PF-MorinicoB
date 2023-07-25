@@ -1,0 +1,38 @@
+header{
+    margin: 0;
+    width: 100%;
+    background-color: rgb( 78, 205, 196);
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div{
+        .logo{
+            flex-grow: 1;
+            width: 200px;
+            height: 200px;
+        }
+    }
+    nav{
+        flex-grow: 2;
+        height: 100%;
+        ul{
+            height: 100%;
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            li{
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.maincontacto{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .formu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        legend{
+            color: white;
+            font-size: $tamañofuente;
+        }
+        .nombre{
+            width: 500px;
+            height: 50px;
+            margin-bottom: 15px;
+            background-color: rgb(255, 255, 255, 40%);
+            border-style: inherit;
+            border-radius: 5px;
+
+        }
+        .mail{
+            width: 500px;
+            height: 50px;
+            margin-bottom: 15px;
+            background-color: rgb(255, 255, 255, 40%);
+            border-style: inherit;
+            border-radius: 5px;
+        }
+        .textoformu{
+            width: 500px;
+            height: 200px;
+            margin-bottom: 15px;
+            background-color: rgb(255, 255, 255, 40%);
+            border-style: inherit;
+            border-radius: 5px;
+        }
+        #opciones{
+            width: 500px;
+            background-color: rgb(255, 255, 255, 40%);
+            margin-bottom: 15px;
+        }
+        .btnenviar{
+            margin-bottom: 50px;
+        }
+    }
+}

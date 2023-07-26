@@ -1,0 +1,57 @@
+.mainosotros{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .nos{
+        margin: 0;
+        padding-bottom: 25px;
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 2fr, 2fr;
+        grid-template-areas:
+        "titulos titulos"
+        "img nosotros1"
+        "nosotros2 video";
+        .titulo{
+            padding-left: 25px;
+            padding-bottom: 25px;
+            grid-area: titulos;
+            font-size: $tamañofuente;
+        }
+        .nosotros1{
+            grid-area: nosotros1;
+            text-align: justify;
+            padding-right: 50px;
+            display: flex;
+            flex-flow: row, wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .nosotros2{
+            grid-area: nosotros2;
+            text-align: justify;
+            padding-left: 50px;
+            padding-top: 25px;
+            display: flex;
+            flex-flow: row, wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgnos{
+            grid-area: img;
+            height: 500px;
+            width: 700px;
+            border-radius: 5px;
+            align-self: center;
+            justify-self: center;
+        }
+        .videonos{
+            grid-area: video;
+            border-radius: 5px;
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}

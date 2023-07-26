@@ -1,0 +1,29 @@
+.mainprecio{
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "titulo . ."
+    "packs packs packs"
+    ". reserva .";
+    #titulopack{
+        grid-area: titulo;
+        margin-left: 50px;
+        margin-top: 25px;
+        font-size: 1.5rem;
+    }
+    .packs{
+        @include flexpacks;
+        .precios{
+            background-color: rgb(86, 207, 225);
+        }
+    }
+   .reserva{
+        grid-area: reserva;
+        text-align: center;
+        font-size: 1rem;
+        a:hover{
+            color: aquamarine;
+        }
+   }
+}

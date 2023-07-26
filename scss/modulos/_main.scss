@@ -1,0 +1,19 @@
+.mainhome{
+    height: 100%;
+    width: 100%;
+    grid-area: mainhome;
+    .horagrilla{
+        grid-area: grilla;
+        #horario{
+            margin-top: 25px;
+            margin-left: 50px;
+            #grilla{
+                height: 500px;
+                width: 700;
+                color: white;
+                margin-bottom: 50px;
+
+            }
+        }
+    }
+}

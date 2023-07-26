@@ -1,3 +1,239 @@
+header {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(78, 205, 196);
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header div .logo {
+  flex-grow: 1;
+  width: 200px;
+  height: 200px;
+}
+header nav {
+  flex-grow: 2;
+  height: 100%;
+}
+header nav ul {
+  height: 100%;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
 
+footer {
+  background-color: rgb(78, 205, 196);
+  color: white;
+  width: 100%;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "seguinos mapa . logo";
+}
+footer .red {
+  grid-area: seguinos;
+}
+footer .red .titulored {
+  font-size: font-size 1.5rem;
+}
+footer .mapa {
+  grid-area: mapa;
+}
+footer .mapa .titulomapa {
+  font-size: font-size 1.5rem;
+  color: white;
+}
+footer .logo {
+  grid-area: logo;
+  width: 100%;
+}
+footer .logo .log {
+  height: 50px;
+  width: 50px;
+}
+
+.mainhome {
+  height: 100%;
+  width: 100%;
+  grid-area: mainhome;
+}
+.mainhome .horagrilla {
+  grid-area: grilla;
+}
+.mainhome .horagrilla #horario {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+.mainhome .horagrilla #horario #grilla {
+  height: 500px;
+  width: 700;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.maincontacto {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.maincontacto .formu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.maincontacto .formu legend {
+  color: white;
+  font-size: font-size 1.5rem;
+}
+.maincontacto .formu .nombre {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-style: inherit;
+  border-radius: 5px;
+}
+.maincontacto .formu .mail {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-style: inherit;
+  border-radius: 5px;
+}
+.maincontacto .formu .textoformu {
+  width: 500px;
+  height: 200px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-style: inherit;
+  border-radius: 5px;
+}
+.maincontacto .formu #opciones {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 15px;
+}
+.maincontacto .formu .btnenviar {
+  margin-bottom: 50px;
+}
+
+.mainosotros {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainosotros .nos {
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr, 2fr, 2fr;
+  grid-template-areas: "titulos titulos" "img nosotros1" "nosotros2 video";
+}
+.mainosotros .nos .titulo {
+  padding-left: 25px;
+  padding-bottom: 25px;
+  grid-area: titulos;
+  font-size: font-size 1.5rem;
+}
+.mainosotros .nos .nosotros1 {
+  grid-area: nosotros1;
+  text-align: justify;
+  padding-right: 50px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mainosotros .nos .nosotros2 {
+  grid-area: nosotros2;
+  text-align: justify;
+  padding-left: 50px;
+  padding-top: 25px;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+}
+.mainosotros .nos .imgnos {
+  grid-area: img;
+  height: 500px;
+  width: 700px;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+}
+.mainosotros .nos .videonos {
+  grid-area: video;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+}
+
+.mainprecio {
+  display: grid;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "titulo . ." "packs packs packs" ". reserva .";
+}
+.mainprecio #titulopack {
+  grid-area: titulo;
+  margin-left: 50px;
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+.mainprecio .packs {
+  height: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-area: packs;
+}
+.mainprecio .packs .precios {
+  background-color: rgb(86, 207, 225);
+}
+.mainprecio .reserva {
+  grid-area: reserva;
+  text-align: center;
+  font-size: 1rem;
+}
+.mainprecio .reserva a:hover {
+  color: aquamarine;
+}
+
+.tituloprod {
+  font-size: font-size 1.5rem;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.productos .card-body {
+  background-color: rgba(78, 205, 197, 0.6);
+}
 
 /*# sourceMappingURL=style.css.map */

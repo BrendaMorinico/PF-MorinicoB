@@ -4,6 +4,7 @@
     grid-area: mainhome;
     .horagrilla{
         grid-area: grilla;
+        padding-bottom: 25px;
         #horario{
             margin-top: 25px;
             margin-left: 50px;
@@ -11,8 +12,6 @@
                 height: 500px;
                 width: 700;
                 color: white;
-                margin-bottom: 50px;
-
             }
         }
     }

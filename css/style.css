@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Titillium+Web:wght@300&display=swap");
 header {
   margin: 0;
   width: 100%;
@@ -47,6 +48,17 @@ footer .red {
 }
 footer .red .titulored {
   font-size: font-size 1.5rem;
+  padding-left: 15px;
+}
+footer .red .iglogo {
+  height: 50px;
+  width: 50px;
+  padding-left: 15px;
+}
+footer .red .twlogo {
+  height: 50px;
+  width: 50px;
+  padding-left: 15px;
 }
 footer .mapa {
   grid-area: mapa;
@@ -55,13 +67,17 @@ footer .mapa .titulomapa {
   font-size: font-size 1.5rem;
   color: white;
 }
+footer .mapa .mapalogo {
+  height: 50px;
+  width: 50px;
+}
 footer .logo {
   grid-area: logo;
   width: 100%;
 }
 footer .logo .log {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
 }
 
 .mainhome {
@@ -71,6 +87,7 @@ footer .logo .log {
 }
 .mainhome .horagrilla {
   grid-area: grilla;
+  padding-bottom: 25px;
 }
 .mainhome .horagrilla #horario {
   margin-top: 25px;
@@ -80,7 +97,6 @@ footer .logo .log {
   height: 500px;
   width: 700;
   color: white;
-  margin-bottom: 50px;
 }
 
 .maincontacto {
@@ -156,6 +172,7 @@ footer .logo .log {
   grid-area: nosotros1;
   text-align: justify;
   padding-right: 50px;
+  padding-left: 50px;
   display: flex;
   flex-flow: row, wrap;
   justify-content: center;
@@ -165,6 +182,7 @@ footer .logo .log {
   grid-area: nosotros2;
   text-align: justify;
   padding-left: 50px;
+  padding-right: 50px;
   padding-top: 25px;
   display: flex;
   flex-flow: row, wrap;
@@ -188,18 +206,19 @@ footer .logo .log {
 
 .mainprecio {
   display: grid;
-  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 2fr, 1fr;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "titulo . ." "packs packs packs" ". reserva .";
+  padding-bottom: 50px;
 }
 .mainprecio #titulopack {
   grid-area: titulo;
-  margin-left: 50px;
-  margin-top: 25px;
-  font-size: 1.5rem;
+  font-size: font-size 1.5rem;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .mainprecio .packs {
-  height: 100px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -209,9 +228,14 @@ footer .logo .log {
 .mainprecio .packs .precios {
   background-color: rgb(86, 207, 225);
 }
+.mainprecio .packs .desc {
+  width: 300px;
+  height: 400px;
+}
 .mainprecio .reserva {
   grid-area: reserva;
   text-align: center;
+  padding-top: 25px;
   font-size: 1rem;
 }
 .mainprecio .reserva a:hover {
@@ -231,9 +255,69 @@ footer .logo .log {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 50px;
 }
 .productos .card-body {
   background-color: rgba(78, 205, 197, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HOME */
+body {
+  height: 100vh;
+  font-family: "Titillium Web", sans-serif;
+  background-color: rgb(26, 83, 92);
+  color: white;
+}
+
+.homebody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 2fr, 1fr;
+  grid-template-areas: "header header" "mainhome mainhome" "footer footer";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.home {
+  background-color: rgb(83, 144, 217);
+  color: white;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+  }
+  .logo {
+    justify-items: center;
+  }
+  .footer {
+    background-color: black;
+  }
+  .nos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .imgnos {
+    height: 300px;
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

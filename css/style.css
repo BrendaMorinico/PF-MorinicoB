@@ -94,9 +94,9 @@ footer .logo .log {
   margin-left: 50px;
 }
 .mainhome .horagrilla #horario #grilla {
-  height: 500px;
-  width: 700;
-  color: white;
+  height: 200px;
+  width: 300;
+  justify-self: center;
 }
 
 .maincontacto {
@@ -104,16 +104,19 @@ footer .logo .log {
   padding: 0;
   box-sizing: border-box;
 }
+.maincontacto legend {
+  color: white;
+  font-size: 2rem;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
 .maincontacto .formu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.maincontacto .formu legend {
-  color: white;
-  font-size: font-size 1.5rem;
 }
 .maincontacto .formu .nombre {
   width: 500px;
@@ -172,7 +175,7 @@ footer .logo .log {
   grid-area: nosotros1;
   text-align: justify;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 20px;
   display: flex;
   flex-flow: row, wrap;
   justify-content: center;
@@ -182,7 +185,7 @@ footer .logo .log {
   grid-area: nosotros2;
   text-align: justify;
   padding-left: 50px;
-  padding-right: 50px;
+  padding-right: 20px;
   padding-top: 25px;
   display: flex;
   flex-flow: row, wrap;
@@ -204,6 +207,20 @@ footer .logo .log {
   justify-self: center;
 }
 
+@media (max-width: 768px) and (min-width: 320px) {
+  .mainosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .mainosotros .nos {
+    display: block;
+  }
+  .mainosotros .imgnos {
+    height: 300px;
+    width: 400px;
+  }
+}
 .mainprecio {
   display: grid;
   grid-template-rows: 1fr, 2fr, 1fr;
@@ -231,6 +248,10 @@ footer .logo .log {
 .mainprecio .packs .desc {
   width: 300px;
   height: 400px;
+  transition: transform 2s ease;
+}
+.mainprecio .packs .desc:hover {
+  transform: scale(1.1, 1.1);
 }
 .mainprecio .reserva {
   grid-area: reserva;
@@ -303,20 +324,12 @@ a {
     flex-wrap: nowrap;
     background-color: black;
   }
-  .logo {
+  .header div .logo {
+    display: flex;
     justify-items: center;
   }
   .footer {
     background-color: black;
-  }
-  .nos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .imgnos {
-    height: 300px;
-    width: 400px;
   }
 }
 

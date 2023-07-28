@@ -23,7 +23,7 @@
             grid-area: nosotros1;
             text-align: justify;
             padding-right: 50px;
-            padding-left: 50px;
+            padding-left: 20px;
             display: flex;
             flex-flow: row, wrap;
             justify-content: center;
@@ -34,7 +34,7 @@
             grid-area: nosotros2;
             text-align: justify;
             padding-left: 50px;
-            padding-right: 50px;
+            padding-right: 20px;
             padding-top: 25px;
             display: flex;
             flex-flow: row, wrap;
@@ -54,6 +54,21 @@
             border-radius: 5px;
             align-self: center;
             justify-self: center;
+        }
+    }
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+    .mainosotros{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        .nos{
+            display: block;
+        }
+        .imgnos{
+            height: 300px;
+            width: 400px;
         }
     }
 }

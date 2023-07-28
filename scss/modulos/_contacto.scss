@@ -2,16 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    legend{
+        color: white;
+        font-size: 2rem;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
     .formu{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        legend{
-            color: white;
-            font-size: $tamañofuente;
-        }
+       
         .nombre{
             width: 500px;
             height: 50px;

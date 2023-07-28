@@ -52,21 +52,16 @@ a{
        flex-direction: column;
        flex-wrap: nowrap;
        background-color: black;
-    }
-    .logo{
-        justify-items: center;
+       div{
+        .logo{
+            display: flex;
+            justify-items: center;
+        }
+       }
     }
     .footer{
         background-color: black;
-    }
 
-    .nos{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .imgnos{
-        height: 300px;
-        width: 400px;
     }
 }
+

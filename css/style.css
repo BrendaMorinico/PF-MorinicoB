@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Titillium+Web:wght@300&display=swap");
 header {
   margin: 0;
-  width: 100%;
   background-color: rgb(78, 205, 196);
   grid-area: header;
   display: flex;
@@ -16,8 +15,11 @@ header div .logo {
 header nav {
   flex-grow: 2;
   height: 100%;
+  box-sizing: border-box;
 }
 header nav ul {
+  margin: 0;
+  padding: 0;
   height: 100%;
   text-decoration: none;
   list-style: none;
@@ -103,6 +105,7 @@ footer .logo .log {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100vh;
 }
 .maincontacto legend {
   color: white;
@@ -147,13 +150,14 @@ footer .logo .log {
   background-color: rgba(255, 255, 255, 0.4);
   margin-bottom: 15px;
 }
+.maincontacto .formu #opciones .opcionesropa {
+  background-color: rgba(78, 205, 196, 0.5);
+}
 .maincontacto .formu .btnenviar {
   margin-bottom: 50px;
 }
 
 .mainosotros {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 .mainosotros .nos {
@@ -174,23 +178,26 @@ footer .logo .log {
 .mainosotros .nos .nosotros1 {
   grid-area: nosotros1;
   text-align: justify;
-  padding-right: 50px;
-  padding-left: 20px;
   display: flex;
   flex-flow: row, wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+  padding-left: 20px;
 }
 .mainosotros .nos .nosotros2 {
   grid-area: nosotros2;
   text-align: justify;
-  padding-left: 50px;
-  padding-right: 20px;
   padding-top: 25px;
   display: flex;
   flex-flow: row, wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 50px;
 }
 .mainosotros .nos .imgnos {
   grid-area: img;
@@ -215,10 +222,28 @@ footer .logo .log {
   }
   .mainosotros .nos {
     display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
   .mainosotros .imgnos {
-    height: 300px;
-    width: 400px;
+    display: none;
+  }
+  .mainosotros .nosotros1 {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .mainosotros .nosotros1 p {
+    margin: 0;
+  }
+  .mainosotros .nosotros2 {
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 25px;
+  }
+  .mainosotros .nosotros2 p {
+    margin: 0;
   }
 }
 .mainprecio {

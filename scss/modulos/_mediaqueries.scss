@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin desktop {
+    @media screen and (max-width: 2100px) and (min-width: 768px) {
+        @content
+    }
+}

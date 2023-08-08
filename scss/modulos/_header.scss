@@ -15,10 +15,13 @@ header{
             align-self: center;
         }
     }
-    nav{
+    .navheader{
         flex-grow: 2;
         height: 100%;
         box-sizing: border-box;
+        @include mobile {
+            display: none;
+        }
         ul{
             margin: 0;
             padding: 0;
@@ -38,6 +41,11 @@ header{
                 }
 
             }
+        }
+    }
+    .navmobile{
+        @include desktop {
+            display: none;
         }
     }
 }

@@ -24,6 +24,10 @@
             background-color: rgb(255, 255, 255, 40%);
             border-style: inherit;
             border-radius: 5px;
+            @include mobile {
+                width: 350px;
+                height: 40px;
+            }
 
         }
         .mail{
@@ -33,6 +37,10 @@
             background-color: rgb(255, 255, 255, 40%);
             border-style: inherit;
             border-radius: 5px;
+            @include mobile {
+                width: 350px;
+                height: 40px;
+            }
         }
         .textoformu{
             width: 500px;
@@ -41,11 +49,19 @@
             background-color: rgb(255, 255, 255, 40%);
             border-style: inherit;
             border-radius: 5px;
+            @include mobile {
+                width: 350px;
+                height: 40px;
+            }
         }
         #opciones{
             width: 500px;
             background-color: rgba(255, 255, 255, 40%);
             margin-bottom: 15px;
+            @include mobile {
+                width: 350px;
+                height: 40px;
+            }
             .opcionesropa{
                 background-color: rgba(78, 205, 196, 50%);
             }

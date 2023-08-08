@@ -8,11 +8,22 @@ footer{
     grid-template-rows: 1fr;
     grid-template-areas:
     "seguinos mapa . logo";
+    @include mobile{
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "seguinos mapa logo";
+    }
     .red{
         grid-area: seguinos;
         .titulored{
             font-size: $tamañofuente;
             padding-left: 15px;
+            @include mobile{
+                margin: 0;
+                font-size: 1rem;
+            }
         }
         .iglogo{
             height: 50px;
@@ -30,6 +41,10 @@ footer{
         .titulomapa{
             font-size: $tamañofuente;
             color: white;
+            @include mobile{
+                margin: 0;
+                font-size: 1rem;
+            }
         }
         .mapalogo{
             height: 50px;

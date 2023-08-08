@@ -12,6 +12,11 @@ header div .logo {
   width: 200px;
   height: 200px;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  header div {
+    align-self: center;
+  }
+}
 header nav {
   flex-grow: 2;
   height: 100%;
@@ -45,12 +50,26 @@ footer {
   grid-template-rows: 1fr;
   grid-template-areas: "seguinos mapa . logo";
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "seguinos mapa logo";
+  }
+}
 footer .red {
   grid-area: seguinos;
 }
 footer .red .titulored {
   font-size: font-size 1.5rem;
   padding-left: 15px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  footer .red .titulored {
+    margin: 0;
+    font-size: 1rem;
+  }
 }
 footer .red .iglogo {
   height: 50px;
@@ -68,6 +87,12 @@ footer .mapa {
 footer .mapa .titulomapa {
   font-size: font-size 1.5rem;
   color: white;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  footer .mapa .titulomapa {
+    margin: 0;
+    font-size: 1rem;
+  }
 }
 footer .mapa .mapalogo {
   height: 50px;
@@ -129,6 +154,12 @@ footer .logo .log {
   border-style: inherit;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .maincontacto .formu .nombre {
+    width: 350px;
+    height: 40px;
+  }
+}
 .maincontacto .formu .mail {
   width: 500px;
   height: 50px;
@@ -136,6 +167,12 @@ footer .logo .log {
   background-color: rgba(255, 255, 255, 0.4);
   border-style: inherit;
   border-radius: 5px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .maincontacto .formu .mail {
+    width: 350px;
+    height: 40px;
+  }
 }
 .maincontacto .formu .textoformu {
   width: 500px;
@@ -145,10 +182,22 @@ footer .logo .log {
   border-style: inherit;
   border-radius: 5px;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .maincontacto .formu .textoformu {
+    width: 350px;
+    height: 40px;
+  }
+}
 .maincontacto .formu #opciones {
   width: 500px;
   background-color: rgba(255, 255, 255, 0.4);
   margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .maincontacto .formu #opciones {
+    width: 350px;
+    height: 40px;
+  }
 }
 .maincontacto .formu #opciones .opcionesropa {
   background-color: rgba(78, 205, 196, 0.5);
@@ -160,6 +209,13 @@ footer .logo .log {
 .mainosotros {
   box-sizing: border-box;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainosotros {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .mainosotros .nos {
   margin: 0;
   padding-bottom: 25px;
@@ -168,6 +224,14 @@ footer .logo .log {
   grid-template-columns: 1fr, 1fr;
   grid-template-rows: 1fr, 2fr, 2fr;
   grid-template-areas: "titulos titulos" "img nosotros1" "nosotros2 video";
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainosotros .nos {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .mainosotros .nos .titulo {
   padding-left: 25px;
@@ -187,6 +251,17 @@ footer .logo .log {
   padding-right: 50px;
   padding-left: 20px;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainosotros .nos .nosotros1 {
+    font-size: 1rem;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .mainosotros .nos .nosotros1 p {
+    margin: 0;
+  }
+}
 .mainosotros .nos .nosotros2 {
   grid-area: nosotros2;
   text-align: justify;
@@ -199,6 +274,18 @@ footer .logo .log {
   padding-right: 20px;
   padding-left: 50px;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainosotros .nos .nosotros2 {
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .mainosotros .nos .nosotros2 p {
+    margin: 0;
+  }
+}
 .mainosotros .nos .imgnos {
   grid-area: img;
   height: 500px;
@@ -207,45 +294,25 @@ footer .logo .log {
   align-self: center;
   justify-self: center;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainosotros .nos .imgnos {
+    height: 200px;
+    width: 300px;
+  }
+}
 .mainosotros .nos .videonos {
   grid-area: video;
   border-radius: 5px;
   align-self: center;
   justify-self: center;
 }
-
-@media (max-width: 768px) and (min-width: 320px) {
-  .mainosotros {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .mainosotros .nos {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-  .mainosotros .imgnos {
-    display: none;
-  }
-  .mainosotros .nosotros1 {
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
-  }
-  .mainosotros .nosotros1 p {
-    margin: 0;
-  }
-  .mainosotros .nosotros2 {
-    font-size: 1rem;
-    margin: 0;
-    padding-top: 25px;
-  }
-  .mainosotros .nosotros2 p {
-    margin: 0;
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainosotros .nos .videonos {
+    height: 215px;
+    width: 360px;
   }
 }
+
 .mainprecio {
   display: grid;
   grid-template-rows: 1fr, 2fr, 1fr;
@@ -305,6 +372,11 @@ footer .logo .log {
 }
 .productos .card-body {
   background-color: rgba(78, 205, 197, 0.6);
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .productos .card {
+    margin-bottom: 25px;
+  }
 }
 
 * {

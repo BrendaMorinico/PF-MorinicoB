@@ -11,6 +11,9 @@ header{
             width: 200px;
             height: 200px;
         }
+        @include mobile {
+            align-self: center;
+        }
     }
     nav{
         flex-grow: 2;

@@ -23,6 +23,8 @@
             width: 300px;
             height: 400px;
             transition: transform 2s ease;
+            border-style: initial;
+            border-radius: 10px;
         }
         .desc:hover{
             transform: scale(1.1,1.1);

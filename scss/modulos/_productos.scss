@@ -19,5 +19,8 @@
         @include mobile {
             margin-bottom: 25px;
         }
+        .card-text {
+            font-size: 0.9rem;
+        }
     }
 }

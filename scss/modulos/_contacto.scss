@@ -20,7 +20,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-       
         .nombre{
             width: 500px;
             height: 50px;
@@ -32,7 +31,6 @@
                 width: 350px;
                 height: 40px;
             }
-
         }
         .mail{
             width: 500px;
@@ -62,6 +60,7 @@
             width: 500px;
             background-color: rgba(255, 255, 255, 40%);
             margin-bottom: 15px;
+            color: rgb(82, 82, 82);
             @include mobile {
                 width: 350px;
                 height: 40px;

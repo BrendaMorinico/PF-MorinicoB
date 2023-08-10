@@ -7,7 +7,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   header {
     display: flex;
     flex-direction: column;
@@ -20,13 +20,13 @@ header div .logo {
   width: 200px;
   height: 200px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   header div .logo {
     width: 100px;
     height: 100px;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   header div {
     align-self: center;
   }
@@ -36,7 +36,7 @@ header .navheader {
   height: 100%;
   box-sizing: border-box;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   header .navheader {
     display: none;
   }
@@ -74,7 +74,7 @@ footer {
   grid-template-rows: 1fr;
   grid-template-areas: "seguinos mapa . logo";
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   footer {
     background-color: black;
     display: grid;
@@ -90,7 +90,7 @@ footer .red .titulored {
   font-size: font-size 1.5rem;
   padding-left: 15px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   footer .red .titulored {
     margin: 0;
     font-size: 1rem;
@@ -113,7 +113,7 @@ footer .mapa .titulomapa {
   font-size: font-size 1.5rem;
   color: white;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   footer .mapa .titulomapa {
     margin: 0;
     font-size: 1rem;
@@ -137,9 +137,27 @@ footer .logo .log {
   width: 100%;
   grid-area: mainhome;
 }
+@media screen and (max-width: 768px) and (min-width: 280px) {
+  .mainhome .carousel .carousel-inner .carousel-item {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 280px) {
+  .mainhome .carousel .carousel-inner .carousel-item .carousel-caption {
+    font-size: 0.7rem;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.397);
+  }
+}
 .mainhome .horagrilla {
   grid-area: grilla;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 768px) and (min-width: 280px) {
+  .mainhome .horagrilla {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .mainhome .horagrilla #horario {
   margin-top: 25px;
@@ -164,7 +182,7 @@ footer .logo .log {
   padding-left: 25px;
   padding-bottom: 25px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .maincontacto legend {
     color: black;
     font-size: 1.7rem;
@@ -185,7 +203,7 @@ footer .logo .log {
   border-style: inherit;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .maincontacto .formu .nombre {
     width: 350px;
     height: 40px;
@@ -199,7 +217,7 @@ footer .logo .log {
   border-style: inherit;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .maincontacto .formu .mail {
     width: 350px;
     height: 40px;
@@ -213,7 +231,7 @@ footer .logo .log {
   border-style: inherit;
   border-radius: 5px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .maincontacto .formu .textoformu {
     width: 350px;
     height: 200px;
@@ -223,8 +241,9 @@ footer .logo .log {
   width: 500px;
   background-color: rgba(255, 255, 255, 0.4);
   margin-bottom: 15px;
+  color: rgb(82, 82, 82);
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .maincontacto .formu #opciones {
     width: 350px;
     height: 40px;
@@ -240,7 +259,7 @@ footer .logo .log {
 .mainosotros {
   box-sizing: border-box;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainosotros {
     display: flex;
     flex-direction: column;
@@ -256,7 +275,7 @@ footer .logo .log {
   grid-template-rows: 1fr, 2fr, 2fr;
   grid-template-areas: "titulos titulos" "img nosotros1" "nosotros2 video";
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainosotros .nos {
     display: block;
     display: flex;
@@ -282,7 +301,7 @@ footer .logo .log {
   padding-right: 50px;
   padding-left: 20px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainosotros .nos .nosotros1 {
     font-size: 1rem;
     margin: 0;
@@ -306,7 +325,7 @@ footer .logo .log {
   padding-right: 20px;
   padding-left: 50px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainosotros .nos .nosotros2 {
     font-size: 1rem;
     margin: 0;
@@ -327,10 +346,10 @@ footer .logo .log {
   align-self: center;
   justify-self: center;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainosotros .nos .imgnos {
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 400px;
   }
 }
 .mainosotros .nos .videonos {
@@ -339,7 +358,7 @@ footer .logo .log {
   align-self: center;
   justify-self: center;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainosotros .nos .videonos {
     height: 215px;
     width: 360px;
@@ -372,6 +391,11 @@ footer .logo .log {
   height: 400px;
   transition: transform 2s ease;
 }
+@media screen and (max-width: 768px) and (min-width: 280px) {
+  .mainprecio .packs .precios .desc {
+    margin-bottom: 25px;
+  }
+}
 .mainprecio .packs .precios .desc:hover {
   transform: scale(1.1, 1.1);
 }
@@ -381,7 +405,7 @@ footer .logo .log {
   padding-top: 25px;
   font-size: 1rem;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .mainprecio .reserva a {
     color: black;
     font-style: italic;
@@ -412,10 +436,13 @@ footer .logo .log {
 .productos .card {
   margin-bottom: 15px;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   .productos .card {
     margin-bottom: 25px;
   }
+}
+.productos .card .card-text {
+  font-size: 0.9rem;
 }
 
 * {
@@ -431,9 +458,9 @@ body {
   background-color: rgb(26, 83, 92);
   color: white;
 }
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) and (min-width: 280px) {
   body {
-    background-color: rgba(12, 138, 130, 0.382);
+    background-color: rgb(26, 83, 92);
     color: black;
   }
 }

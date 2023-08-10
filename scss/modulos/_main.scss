@@ -2,9 +2,29 @@
     height: 100%;
     width: 100%;
     grid-area: mainhome;
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                @include mobile {
+                    padding: 0;
+                }
+                .carousel-caption{
+                    @include mobile {
+                        font-size: 0.7rem;
+                        color: white;
+                        background-color: rgba(128, 128, 128, 0.397);
+                    }
+                }
+            }
+        }
+    }
     .horagrilla{
         grid-area: grilla;
         padding-bottom: 25px;
+        @include mobile {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
         #horario{
             margin-top: 25px;
             margin-left: 50px;

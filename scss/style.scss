@@ -22,6 +22,10 @@ body{
     font-family: 'Titillium Web', sans-serif;
     background-color: rgb(26, 83, 92);
     color: white;
+    @include mobile {
+        background-color: rgba(12, 138, 130, 0.382);
+        color: black;
+    }
 }
 
 .homebody{
@@ -38,31 +42,3 @@ a{
     text-decoration: none;
     color: white;
 }
-.sticky{
-    position: sticky;
-}
-
-.home{
-    background-color:  rgb(83, 144, 217);
-    color: white;
-}
-
-@media (max-width: 768px) and (min-width: 320px) {
-    .header{
-       display: flex;
-       flex-direction: column;
-       flex-wrap: nowrap;
-       background-color: black;
-       div{
-        .logo{
-            display: flex;
-            justify-items: center;
-        }
-       }
-    }
-    .footer{
-        background-color: black;
-
-    }
-}
-

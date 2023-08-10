@@ -9,6 +9,10 @@
         padding-top: 25px;
         padding-left: 25px;
         padding-bottom: 25px;
+        @include mobile{
+            color: black;
+            font-size: 1.7rem;
+        }
     }
     .formu{
         display: flex;
@@ -51,7 +55,7 @@
             border-radius: 5px;
             @include mobile {
                 width: 350px;
-                height: 40px;
+                height: 200px;
             }
         }
         #opciones{

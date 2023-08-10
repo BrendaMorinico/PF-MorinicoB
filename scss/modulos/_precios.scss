@@ -16,25 +16,29 @@
     }
     .packs{
         @include flexpacks;
-        .precios{
-            background-color: rgb(86, 207, 225);
+        .precios {
+            .desc{
+                width: 300px;
+                height: 400px;
+                transition: transform 2s ease;
+            }
+            .desc:hover{
+                transform: scale(1.1,1.1);
+            }
         }
-        .desc{
-            width: 300px;
-            height: 400px;
-            transition: transform 2s ease;
-            border-style: initial;
-            border-radius: 10px;
-        }
-        .desc:hover{
-            transform: scale(1.1,1.1);
-        }
+        
     }
    .reserva{
         grid-area: reserva;
         text-align: center;
         padding-top: 25px;
         font-size: 1rem;
+        a {
+            @include mobile {
+                color: black;
+                font-style: italic;
+            }
+        }
         a:hover{
             color: aquamarine;
         }

@@ -7,6 +7,14 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: black;
+  }
+}
 header div .logo {
   flex-grow: 1;
   width: 200px;
@@ -62,6 +70,7 @@ footer {
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
   footer {
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 1fr;
@@ -132,7 +141,7 @@ footer .logo .log {
 }
 .mainhome .horagrilla #horario #grilla {
   height: 200px;
-  width: 300;
+  width: 300px;
   justify-self: center;
 }
 
@@ -148,6 +157,12 @@ footer .logo .log {
   padding-top: 25px;
   padding-left: 25px;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .maincontacto legend {
+    color: black;
+    font-size: 1.7rem;
+  }
 }
 .maincontacto .formu {
   display: flex;
@@ -195,7 +210,7 @@ footer .logo .log {
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .maincontacto .formu .textoformu {
     width: 350px;
-    height: 40px;
+    height: 200px;
   }
 }
 .maincontacto .formu #opciones {
@@ -346,17 +361,12 @@ footer .logo .log {
   justify-content: space-around;
   grid-area: packs;
 }
-.mainprecio .packs .precios {
-  background-color: rgb(86, 207, 225);
-}
-.mainprecio .packs .desc {
+.mainprecio .packs .precios .desc {
   width: 300px;
   height: 400px;
   transition: transform 2s ease;
-  border-style: initial;
-  border-radius: 10px;
 }
-.mainprecio .packs .desc:hover {
+.mainprecio .packs .precios .desc:hover {
   transform: scale(1.1, 1.1);
 }
 .mainprecio .reserva {
@@ -364,6 +374,12 @@ footer .logo .log {
   text-align: center;
   padding-top: 25px;
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .mainprecio .reserva a {
+    color: black;
+    font-style: italic;
+  }
 }
 .mainprecio .reserva a:hover {
   color: aquamarine;
@@ -387,6 +403,9 @@ footer .logo .log {
 .productos .card-body {
   background-color: rgba(78, 205, 197, 0.6);
 }
+.productos .card {
+  margin-bottom: 15px;
+}
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .productos .card {
     margin-bottom: 25px;
@@ -406,6 +425,12 @@ body {
   background-color: rgb(26, 83, 92);
   color: white;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  body {
+    background-color: rgba(12, 138, 130, 0.382);
+    color: black;
+  }
+}
 
 .homebody {
   display: grid;
@@ -417,31 +442,6 @@ body {
 a {
   text-decoration: none;
   color: white;
-}
-
-.sticky {
-  position: sticky;
-}
-
-.home {
-  background-color: rgb(83, 144, 217);
-  color: white;
-}
-
-@media (max-width: 768px) and (min-width: 320px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: black;
-  }
-  .header div .logo {
-    display: flex;
-    justify-items: center;
-  }
-  .footer {
-    background-color: black;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

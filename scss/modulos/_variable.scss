@@ -3,7 +3,7 @@ $links: text-decoration (none);
 
 @mixin flexpacks{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     grid-area: packs;

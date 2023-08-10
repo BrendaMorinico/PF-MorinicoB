@@ -16,6 +16,10 @@ header{
             flex-grow: 1;
             width: 200px;
             height: 200px;
+            @include mobile {
+                width: 100px;
+                height: 100px;
+            }
         }
         @include mobile {
             align-self: center;
